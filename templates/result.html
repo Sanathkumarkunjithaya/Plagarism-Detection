@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plagiarism Detection - Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light background color */
+            color: #343a40; /* Dark text color */
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            padding: 20px;
+        }
+        .result {
+            margin-top: 30px;
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .result h3 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #007bff;
+        }
+        .result p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Plagiarism Detection Result</h1>
+        <div class="result">
+            <h3>Plagiarism Detected: {{ plagiarism_percentage }}%</h3>
+            <p><strong>Matched Text:</strong> {{ matched_text }}</p>
+        </div>
+    </div>
+</body>
+</html>

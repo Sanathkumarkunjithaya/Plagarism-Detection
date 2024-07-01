@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plagiarism Detector</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f8f9fa; /* Light background color */
+            color: #343a40; /* Dark text color */
+            font-family: Arial, sans-serif; /* Consistent font */
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .form-control {
+            background-color: #fff; /* White input background color */
+            color: #343a40; /* Dark text color for inputs */
+            border: 1px solid #ced4da; /* Light border color */
+        }
+        .btn-primary {
+            background-color: #007bff; /* Blue primary button color */
+            border-color: #007bff; /* Blue primary button border color */
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            border-color: #0056b3;
+        }
+        .about {
+            background-color: #ffffff; /* White background for about section */
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid #ced4da; /* Light border color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        .about h2 {
+            color: #007bff; /* Blue color for headers */
+        }
+        .about p, .about ul {
+            color: #343a40; /* Dark text color */
+        }
+        .about ul {
+            padding-left: 20px; /* Indent list items */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Plagiarism Detector</h1>
+        <form action="/check" method="post">
+            <div class="form-group">
+                <label for="text">Enter your text:</label>
+                <textarea class="form-control" id="text" name="text" rows="10" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Check for Plagiarism</button>
+        </form>
+        <div class="about">
+            <h2>About Us</h2>
+            <p>This is an NLP project created by 6 - AIDS students for assignment purposes under the guidance of Miss. Sandra Jeyes.</p>
+            <h2>Implementation</h2>
+            <p>Our Plagiarism Detector uses Natural Language Processing (NLP) techniques to identify similar text across different documents. It includes features like:</p>
+            <ul>
+                <li>Tokenization using NLTK</li>
+                <li>TF-IDF Vectorization</li>
+                <li>Cosine Similarity for comparison</li>
+            </ul>
+            <h2>Team Members</h2>
+            <ul>
+                <li>Sanath Kumar Kunjithaya</li>
+                <li>Shashank S U</li>
+                <li>Sujay K</li>
+                <li>Anurag R Poojary</li>
+                <li>R Vikas</li>
+                <li>Ananth B S</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
